@@ -12,7 +12,7 @@ interface Tarefa {
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css']
 })
-export class ListaTarefasComponent implements OnInit {
+export class appcomponents implements OnInit {
   tarefas: Tarefa[] = [
     { id: 1, nome: 'Estudar Angular', concluida: false },
     { id: 2, nome: 'Fazer compras', concluida: false },

@@ -10,7 +10,7 @@
 <ul>
   <li *ngFor="let tarefa of tarefas">
     <span [class.concluida]="tarefa.concluida">{{ tarefa.nome }}</span>
-    <button (click)="toggle(tarefa.id)">Marcar como {{ tarefa.concluida ? 'não concluída' : 'concluída' }}</button>
+    <button (click)="toggleConcluida"(tarefa.id)">Marcar como {{ tarefa.concluida ? 'não concluída' : 'concluída' }}</button>
     <button (click)="excluirTarefa(tarefa.id)">Excluir</button>
   </li>
 </ul>
